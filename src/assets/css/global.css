@@ -1,0 +1,106 @@
+.pos-abs {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+.pos-fixed {
+  position: fixed;
+}
+.m-t-20 {
+  margin-top: 1rem;
+}
+
+.m-b-20 {
+  margin-bottom: 1rem;
+}
+
+.m-l-20 {
+  margin-left: 1rem;
+}
+
+.m-r-20 {
+  margin-right: 1rem;
+}
+
+.fz-24 {
+  font-size: 1.2rem;
+}
+.fz-30 {
+  font-size: 1.5rem;
+}
+
+.bor-t-e5 {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);;
+}
+.bor-b-e5 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.02);;
+}
+
+/* 可以用单词表示某种颜色的话就用单词 否则用颜色HEX来写类名 */
+.c-white {
+  color: #fff;
+}
+.c-red {
+  color: red;
+}
+.c-green {
+  color:#09BB07;
+}
+.c-gray {
+  color: #b2b2b2;
+}
+.c-888 {
+  color: #888;
+}
+.c-ccc {
+  color: #ccc;
+}
+.c-theme {
+  color: #5876A6;
+}
+
+.bg-gray {
+  background: #e5e5e5;
+}
+.bg-red {
+  background: #ff0000;
+}
+.bg-green {
+  background: #14C75B;
+}
+.bg-trans {
+  background: transparent;
+}
+/* 显示方式 */
+.disp-flex {
+  display: flex;
+}
+.disp-block {
+  display: block;
+}
+.disp-ib {
+  display: inline-block;
+}
+.ovf-hd {
+  overflow: hidden;
+}
+.w-100p {
+  width: 100%;
+}
+
+.lh-44 {
+  line-height: 2.2rem;
+}
+
+.required-icon {
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.widget-disabled {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.tx-c {
+  text-align: center;
+}

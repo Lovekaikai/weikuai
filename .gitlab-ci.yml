@@ -1,0 +1,36 @@
+stages:
+  - staging_test
+  - test
+  - release
+  - hcrm
+
+
+运行测试用例:
+  stage: staging_test
+  script: 
+    - echo "进行相关的测试"
+    - echo "测试通过"
+    - echo "完成测试"
+
+
+部署到Test分支:
+  stage: test
+  script:
+    - echo "部署到测试服务器上"
+    - export super_model_super_web_api=http://supermodel_super_api.honray.cc/
+    - cd /home/gitlab-runner/common/frontend && ./staging.sh 
+    - echo "成功部署到测试服务器"
+  only:
+  - test
+
+部署到Release分支:
+  stage: release
+  script:
+    - echo "部署到测试服务器上"
+    - export PROJECT_NAME=RELEASE
+    - export SUPER_MODEL_SUPER_WEB_API=http://release_super_api.honray.cc/
+    - cd /home/gitlab-runner/common/frontend/duplication && ./inner.sh
+    - echo "成功部署到测试服务器"
+  when: manual
+  only:
+  - release
